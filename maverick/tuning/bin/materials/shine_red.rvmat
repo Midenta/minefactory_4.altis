@@ -1,0 +1,13 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Altishusky.uc-arma.dev1.39.Altis\maverick\tuning\bin\materials\shine_red.rvmat
+//Produced from mikero's Dos Tools Dll version 6.44
+//'now' is Sun May 12 21:54:28 2019 : 'file' last modified on Fri Aug 31 17:18:37 2018
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+Ambient[] = {2,0,0.4,1};
+Diffuse[] = {1,0.75,0,1};
+specular[] = {1,0.25,0,0};
+specularPower = 20;

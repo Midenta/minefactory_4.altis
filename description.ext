@@ -1,0 +1,89 @@
+/*
+	Thieves
+
+	Thieves-Gaming.de
+
+	Diese Mission ist bearbeitet von dem Development Team von Thieves-Gaming.de!!
+	Diese Mission darf von keinem anderen genutzt werden außer von Thieves-Gaming.de!
+*/
+
+respawnOnStart = -1; // Default: 0b
+
+vonCodec = 1;
+vonCodecQuality = 30;
+showHUD[] = {
+    true,    // Scripted HUD (same as showHUD command)
+    true,    // Vehicle + soldier info
+    true,    // Vehicle radar [HIDDEN]
+    true,    // Vehicle compass [HIDDEN]
+    true,    // Tank direction indicator
+    false,    // Commanding menu
+    false,    // Group Bar
+    true,    // HUD Weapon Cursors
+    true    // Vehicle display panels
+};
+
+#include "dialog\MasterHandler.hpp"
+#include "config\Config_Master.hpp"
+#include "The-Programmer\theprogrammer_dialog_master.cpp"
+#include "scripts\derleon\Scripts_Master.hpp"
+#include "dialog\agb.hpp"
+#include "Scripts\cation\cation_master.cpp"
+#include "maverick\maverick_master.cpp"
+//#include "scripts\AFAR\UI\defines.hpp"
+//#include "scripts\AFAR\UI\dialogs.hpp"
+//#include "config\premium_config.hpp"
+/*#include "wlkr\WLKR_Controls.hpp"
+#include "wlkr\WLKR_Store.hpp"
+#include "wlkr\wlkr_clothing.hpp"
+#include "wlkr\wlkr_panel.hpp"
+*/
+#include "Scripts\fini\Config.hpp"
+#include "Scripts\Ermen\handler.hpp"
+#include "config\Config_Newbie.hpp"
+#include "config\allinone_config.hpp"
+
+forceRotorLibSimulation = 0;
+
+overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
+
+class Header {
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 130;
+};
+
+class CfgCommands {
+	allowedHTMLLoadURIs[] += {
+        "https://fini.dev/*"
+    };
+};
+
+class RscTitles {
+    #include "dialog\progress.hpp"
+    #include "dialog\hud_nameTags.hpp"
+    #include "dialog\hud_stats.hpp"
+	#include "core\idcard\idcard_show.hpp"
+	//#include "maverick\introcam\dialogs\title_status.hpp"
+	#include "maverick\tuning\dialogs\titles.hpp"
+	#include "core\gangs\aapps_gang_title.hpp"
+	#include "Scripts\husky\notificationSystem\rsc\rsc_notifications.hpp"
+	//#include "Scripts\AFAR\UI\titles.hpp"
+	#include "dialog\idlicence.hpp"
+};
+
+class CfgFunctions {
+	#include "Functions.hpp"
+	#include "Scripts\cation\cation_functions.cpp"
+	#include "maverick\maverick_functions_master.cpp"
+	#include "Scripts\fini\Functions.hpp"
+};
+
+class notificationSystem {
+	#include "Scripts\husky\notificationSystem\config\config_master.hpp"
+	#include "The-Programmer\Duty_System\notifications.cpp"
+};
+
+class CfgMarkerFilter {
+    #include "scripts\mrkrFilter\FLTR_cfg_Main.hpp"
+};

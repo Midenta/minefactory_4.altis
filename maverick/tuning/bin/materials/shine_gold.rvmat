@@ -1,0 +1,11 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Altishusky.uc-arma.dev1.39.Altis\maverick\tuning\bin\materials\shine_gold.rvmat
+//Produced from mikero's Dos Tools Dll version 6.44
+//'now' is Sun May 12 21:54:28 2019 : 'file' last modified on Fri Aug 31 17:18:36 2018
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+specular[] = {0.99,0.969,0.00784,0.64};
+specularPower = 60;

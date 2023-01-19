@@ -1,0 +1,11 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Altishusky.uc-arma.dev1.39.Altis\maverick\tuning\bin\materials\shine_blue.rvmat
+//Produced from mikero's Dos Tools Dll version 6.44
+//'now' is Sun May 12 21:54:28 2019 : 'file' last modified on Fri Aug 31 17:18:36 2018
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+specular[] = {0.21,0.86,0.998,0.639};
+specularPower = 60;

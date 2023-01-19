@@ -1,0 +1,26 @@
+_btn5 ctrlSetText "core\textures\menu_icons\icon_torture.paa";
+			_btn5 ctrlSetTooltip "Foltern";
+			_btn5 buttonSetAction "closeDialog 0; [EMonkeys_pInact_curTarget] spawn EMonkeys_fnc_TorturePlayer;";
+			if(!(license_civ_Torture)) then {_btn5 ctrlEnable false;};
+
+			if(_curTarget getVariable["gagged",false]) then 
+			{
+				_btn6 ctrlSetText "core\textures\menu_icons\icon_jutesackstop.paa";
+				_btn6 ctrlSetTooltip "Sack abnehmen";
+				_btn6 buttonSetAction "closeDialog 0; [[0],""EMonkeys_fnc_bagUseAction"",EMonkeys_pInact_curTarget,FALSE] call EMonkeys_fnc_MP;";
+				if(!(license_civ_Torture)) then {_btn6 ctrlEnable false;};
+			} 
+				else 
+			{
+				if(EMonkeys_inv_jutesack < 1) then 
+				{
+					_btn6 ctrlSetText "core\textures\menu_icons\icon_jutesack.paa";
+					_btn6 ctrlEnable false;
+					_btn6 ctrlSetTooltip "Du brauchst einen Jutesack dazu!";
+				} else {
+					_btn6 ctrlSetText "core\textures\menu_icons\icon_jutesack.paa";
+					_btn6 ctrlSetTooltip "Sack überziehen";
+					_btn6 buttonSetAction "closeDialog 0; [3] spawn EMonkeys_fnc_bagUseAction;";
+				};
+				if(!(license_civ_Torture)) then {_btn6 ctrlEnable false;};
+			};

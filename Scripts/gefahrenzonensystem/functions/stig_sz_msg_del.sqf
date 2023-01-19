@@ -1,0 +1,1 @@
+hint parseText "<t size='2'><t color='#0026FF'>Gefahrenzone</t></t><br/>Die Einsatzleitung hat eine Gefahrenzone entfernt.<br/>Du kannst das Gebiet nun wieder sicher betreten.";
